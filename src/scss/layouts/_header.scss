@@ -1,0 +1,79 @@
+@use '../base/variable' as *;
+
+.header {
+    padding: 30px 0;
+
+    .holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 28px;
+        font-weight: 600;
+
+        @media only screen and (max-width: 991px) {
+            font-size: 20px;
+        }
+
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $black;
+        }
+
+        i {
+            color: $primaryColor;
+            font-size: 48px;
+
+            @media only screen and (max-width: 991px) {
+                font-size: 34px;
+            }
+        }
+    }
+
+    .contactInfo {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-left: 30px;
+
+            @media only screen and (max-width: 991px) {
+                margin-left: 20px;
+            }
+        }
+
+        i {
+            color: $primaryColor;
+            font-size: 20px;
+        }
+
+        a{
+            text-decoration: none;
+            color: $lightBlack;
+
+            span {
+                @media only screen and (max-width: 991px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.navbar{
+    .navbar-nav {
+        a{
+            text-transform: uppercase;
+            padding: 0 !important;
+            margin-right: 60px;
+        }
+    }
+}
